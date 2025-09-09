@@ -29,6 +29,9 @@
     I2C1_SCL -> SCL on SSD1306 Moudle
     3.3v -> VCC on SSD1306 Moudle
     GND -> GND on SSD1306 Moudle
+    
+    duo-pinmux -w GP4/I2C1_SCL
+    duo-pinmux -w GP5/I2C1_SDA
  */
 
 // 使用到的I2C地址 The I2C used
@@ -47,7 +50,7 @@ int fd_i2c;
 #define YLevel       0xB0
 #define	Brightness	 0xFF 
 #define WIDTH 	     128
-#define HEIGHT 	     32	
+#define HEIGHT 	     64	
 
 
 const unsigned char asc2_0806[][6] ={
